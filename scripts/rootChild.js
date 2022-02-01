@@ -43,7 +43,7 @@ module.exports = async function(callback) {
       await rootContract.mapToken(nftContract.address)
       let mappedAddress = await rootContract.rootToChildTokens(nftContract.address)
       console.log(mappedAddress)
-      //await rootContract.deposit(nftContract.address, accounts[0], 0, nullBytes, { from: accounts[0] })
+      await rootContract.deposit(nftContract.address, accounts[0], 0, nullBytes, { from: accounts[0] })
     }
 
     if (network == 'mumbai') {
