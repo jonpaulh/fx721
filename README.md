@@ -1,6 +1,6 @@
 npm install  
-nvm use 12.0
-cp .env-sample .env
+nvm use 12.0  
+cp .env-sample .env  
 set env vars  
 truffle migrate --reset --network mumbai  
 truffle migrate --reset --network goerli  
